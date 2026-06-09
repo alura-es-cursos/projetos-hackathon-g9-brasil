@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hackathon ONE – Projetos G9 | Alura + Oracle</title>
+  <meta name="description" content="Conheça os três projetos do Hackathon do programa ONE (Oracle Next Education), uma parceria entre Alura e Oracle, com organização da NoCountry." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HERO / HEADER ===== -->
+  <header class="hero" id="inicio">
+    <div class="hero-bg-glow"></div>
+    <nav class="navbar">
+      <div class="nav-logos">
+        <!-- Logo Alura -->
+        <div class="logo-slot" id="logo-alura" title="Alura">
+          <img src="assets/alura-logo.png" alt="Alura" onerror="this.style.display='none'; this.parentElement.classList.add('logo-placeholder');" />
+          <span class="logo-fallback">Alura</span>
+        </div>
+        <!-- Logo ONE -->
+        <div class="logo-slot" id="logo-one" title="Programa ONE">
+          <img src="assets/one-logo.png" alt="Oracle Next Education" onerror="this.style.display='none'; this.parentElement.classList.add('logo-placeholder');" />
+          <span class="logo-fallback">ONE</span>
+        </div>
+        <!-- Logo Oracle -->
+        <div class="logo-slot" id="logo-oracle" title="Oracle">
+          <img src="assets/oracle-logo.png" alt="Oracle" onerror="this.style.display='none'; this.parentElement.classList.add('logo-placeholder');" />
+          <span class="logo-fallback">Oracle</span>
+        </div>
+      </div>
+      <div class="nav-partner">
+        <span class="partner-label">Plataforma parceira</span>
+        <!-- Logo NoCountry -->
+        <div class="logo-slot nocountry-logo-wrap" id="logo-nocountry" title="NoCountry">
+          <img src="assets/nocountry-logo.png" alt="NoCountry" onerror="this.style.display='none'; this.parentElement.classList.add('logo-placeholder');" />
+          <span class="logo-fallback">NoCountry</span>
+        </div>
+        <a href="https://www.nocountry.tech" target="_blank" rel="noopener noreferrer" class="btn-nocountry" id="btn-nocountry">
+          Visitar NoCountry
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Hackathon ONE · Turma G9
+      </div>
+      <h1 class="hero-title">
+        Desafios de<br />
+        <span class="gradient-text">Inovação com IA</span>
+      </h1>
+      <p class="hero-subtitle">
+        Três propostas de projeto para o Hackathon do programa <strong>Oracle Next Education</strong>, 
+        desenvolvidos com Ciência de Dados, Java Spring Boot e serviços OCI.
+        Organização e plataforma de equipes por <strong>NoCountry</strong>.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Projetos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Trilhas</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">OCI</span>
+          <span class="stat-label">Integração</span>
+        </div>
+      </div>
+      <a href="#projetos" class="btn-hero">
+        Explorar os Projetos
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ===== SOBRE O HACKATHON ===== -->
+  <section class="about-section" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contexto</span>
+        <h2>Sobre o Hackathon</h2>
+        <p>Uma maratona de inovação para os alunos do programa ONE colocarem em prática os conhecimentos adquiridos, desenvolvendo soluções reais com tecnologia e inteligência artificial.</p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-icon">🎯</div>
+          <h3>Objetivo</h3>
+          <p>Desenvolver MVPs funcionais que integrem Ciência de Dados, APIs REST e serviços de nuvem OCI, solucionando problemas reais de mercado.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">👥</div>
+          <h3>Equipes</h3>
+          <p>Os alunos se organizam em grupos multidisciplinares na plataforma <strong>NoCountry</strong>, unindo perfis de Back-End, Ciência de Dados e mais.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">☁️</div>
+          <h3>Tecnologias</h3>
+          <p>Python, Scikit-Learn, Java Spring Boot e Oracle Cloud Infrastructure (OCI) são as principais tecnologias envolvidas nos projetos.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🏆</div>
+          <h3>Entregas</h3>
+          <p>Cada equipe entrega um notebook de Data Science, uma API REST documentada e integração com ao menos um serviço OCI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJETOS ===== -->
+  <section class="projects-section" id="projetos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Propostas</span>
+        <h2>Os Três Projetos</h2>
+        <p>Escolha um dos desafios abaixo para aprofundar seu conhecimento, baixar a documentação completa e começar a construir sua solução.</p>
+      </div>
+
+      <!-- ===== PROJETO 1 ===== -->
+      <article class="project-card" id="projeto-1">
+        <div class="project-header">
+          <div class="project-number">01</div>
+          <div class="project-emoji">🧠</div>
+          <div class="project-meta">
+            <span class="project-tag tag-nlp">NLP · Gestão do Conhecimento</span>
+            <h2 class="project-title">ContentAI</h2>
+            <p class="project-subtitle">Classificação e Organização Inteligente de Conteúdos</p>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-desc">
+            <h3>Descrição do Projeto</h3>
+            <p>
+              Criar uma solução inteligente capaz de receber conteúdos técnicos em formato textual e 
+              processá-los automaticamente, classificando-os em categorias relevantes, extraindo 
+              palavras-chave e enriquecendo as informações com metadados gerados pelo modelo.
+            </p>
+            <p>
+              O objetivo é facilitar a organização e o acesso a grandes volumes de informação, 
+              tornando repositórios de conhecimento mais eficientes e navegáveis.
+            </p>
+
+            <div class="project-need">
+              <h4>🏢 Setor</h4>
+              <p>Plataformas educacionais, documentação técnica e gestão do conhecimento corporativo.</p>
+            </div>
+
+            <div class="tech-stack">
+              <h4>Stack Técnica</h4>
+              <div class="tech-pills">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">Scikit-Learn</span>
+                <span class="tech-pill">TF-IDF</span>
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">Spring Boot</span>
+                <span class="tech-pill">OCI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="detail-block">
+              <h4>📦 Entregas Obrigatórias (MVP)</h4>
+              <ul>
+                <li>Notebook com EDA, treinamento e serialização do modelo</li>
+                <li>API REST com endpoint <code>POST /conteudo</code></li>
+                <li>Retorno JSON com categoria, probabilidade e palavras-chave</li>
+                <li>Integração com ao menos um serviço OCI</li>
+                <li>Mínimo de 3 exemplos de uso documentados</li>
+              </ul>
+            </div>
+
+            <div class="detail-block">
+              <h4>⚡ Exemplo de Requisição</h4>
+              <div class="code-block">
+                <pre><code>{
+  "titulo": "Introdução ao Spring Boot",
+  "texto": "Conceitos básicos para
+  criação de APIs REST com
+  Java e Spring Boot."
+}</code></pre>
+              </div>
+            </div>
+
+            <div class="detail-block">
+              <h4>✅ Exemplo de Resposta</h4>
+              <div class="code-block code-response">
+                <pre><code>{
+  "categoria": "Backend",
+  "probabilidade": 0.89,
+  "informacoes_adicionais": [
+    "Java", "Spring Boot",
+    "API REST"
+  ]
+}</code></pre>
+              </div>
+            </div>
+
+            <div class="detail-block">
+              <h4>🚀 Recursos Opcionais</h4>
+              <ul class="optional-list">
+                <li>Recomendação de conteúdos relacionados</li>
+                <li>Busca semântica</li>
+                <li>Dashboard simples</li>
+                <li>Processamento em lote (CSV)</li>
+                <li>Containerização com Docker</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-footer">
+          <div class="oci-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            OCI obrigatório: Object Storage · Compute · Functions
+          </div>
+          <a href="pdfs/projeto-1-contentai.pdf" download class="btn-download" id="btn-download-p1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Baixar Documentação PDF
+          </a>
+        </div>
+      </article>
+
+      <!-- ===== PROJETO 2 ===== -->
+      <article class="project-card project-card--finance" id="projeto-2">
+        <div class="project-header">
+          <div class="project-number">02</div>
+          <div class="project-emoji">📊</div>
+          <div class="project-meta">
+            <span class="project-tag tag-finance">Fintech · Educação Financeira</span>
+            <h2 class="project-title">FinanceAI</h2>
+            <p class="project-subtitle">Assistente Inteligente de Saúde Financeira</p>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-desc">
+            <h3>Descrição do Projeto</h3>
+            <p>
+              Criar uma solução inteligente capaz de analisar o comportamento financeiro de um usuário 
+              a partir de suas transações, gerando uma visão mais completa da sua saúde financeira.
+            </p>
+            <p>
+              A solução classifica despesas automaticamente, identifica padrões de consumo, define 
+              o perfil financeiro do usuário e apresenta recomendações personalizadas para melhorar 
+              sua organização financeira.
+            </p>
+
+            <div class="project-need">
+              <h4>🏢 Setor</h4>
+              <p>Fintech, bancos digitais, carteiras digitais e plataformas de educação financeira.</p>
+            </div>
+
+            <div class="tech-stack">
+              <h4>Stack Técnica</h4>
+              <div class="tech-pills">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">Scikit-Learn</span>
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">Spring Boot</span>
+                <span class="tech-pill">OCI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="detail-block">
+              <h4>📦 Entregas Obrigatórias (MVP)</h4>
+              <ul>
+                <li>Notebook com EDA, engenharia de atributos e modelos</li>
+                <li>API REST com endpoints de classificação de despesas</li>
+                <li>Classificação de perfil financeiro (ex: Organizado, Endividado)</li>
+                <li>Recomendações personalizadas em JSON</li>
+                <li>Alertas de gastos elevados</li>
+                <li>Integração com ao menos um serviço OCI</li>
+              </ul>
+            </div>
+
+            <div class="detail-block">
+              <h4>⚡ Exemplo de Requisição</h4>
+              <div class="code-block">
+                <pre><code>{
+  "descricao": "Uber",
+  "valor": 45.00,
+  "renda_mensal": 3500,
+  "frequencia_economia": "baixa",
+  "nivel_endividamento": "moderado"
+}</code></pre>
+              </div>
+            </div>
+
+            <div class="detail-block">
+              <h4>✅ Exemplo de Resposta</h4>
+              <div class="code-block code-response">
+                <pre><code>{
+  "categoria_despesa": "Transporte",
+  "perfil_financeiro": "Moderado",
+  "recomendacoes": [
+    "Considere alternativas de
+    transporte mais econômicas",
+    "Estabeleça um orçamento
+    mensal de transporte"
+  ]
+}</code></pre>
+              </div>
+            </div>
+
+            <div class="detail-block">
+              <h4>🚀 Recursos Opcionais</h4>
+              <ul class="optional-list">
+                <li>Dashboard de acompanhamento</li>
+                <li>Histórico de análises</li>
+                <li>Exportação de relatórios</li>
+                <li>Processamento em lote via CSV</li>
+                <li>Containerização com Docker</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-footer">
+          <div class="oci-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            OCI obrigatório: Object Storage · Compute · Functions
+          </div>
+          <a href="pdfs/projeto-2-financeai.pdf" download class="btn-download" id="btn-download-p2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Baixar Documentação PDF
+          </a>
+        </div>
+      </article>
+
+      <!-- ===== PROJETO 3 ===== -->
+      <article class="project-card project-card--energy" id="projeto-3">
+        <div class="project-header">
+          <div class="project-number">03</div>
+          <div class="project-emoji">⚡</div>
+          <div class="project-meta">
+            <span class="project-tag tag-energy">Sustentabilidade · Energia</span>
+            <h2 class="project-title">EnergiAI</h2>
+            <p class="project-subtitle">Inteligência para Consumo Energético</p>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-desc">
+            <h3>Descrição do Projeto</h3>
+            <p>
+              Criar uma solução inteligente capaz de analisar padrões de consumo de energia elétrica 
+              e gerar informações que auxiliem na tomada de decisões relacionadas à eficiência energética.
+            </p>
+            <p>
+              A aplicação utiliza Ciência de Dados para identificar padrões e classificar o perfil 
+              energético em categorias como <em>Eficiente</em>, <em>Moderado</em> ou <em>Ineficiente</em>, 
+              fornecendo recomendações e estimativas de impacto financeiro (tarifa de referência: R$ 0,75/kWh).
+            </p>
+
+            <div class="project-need">
+              <h4>🏢 Setor</h4>
+              <p>Sustentabilidade, energia e casas inteligentes — residências e pequenos estabelecimentos.</p>
+            </div>
+
+            <div class="tech-stack">
+              <h4>Stack Técnica</h4>
+              <div class="tech-pills">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Scikit-Learn</span>
+                <span class="tech-pill">Random Forest</span>
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">Spring Boot</span>
+                <span class="tech-pill">OCI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="detail-block">
+              <h4>📦 Entregas Obrigatórias (MVP)</h4>
+              <ul>
+                <li>Notebook com EDA e modelo supervisionado treinado</li>
+                <li>Endpoint <code>POST /analise-energetica</code></li>
+                <li>Classificação de perfil energético com probabilidade</li>
+                <li>Recomendações de otimização energética</li>
+                <li>Estimativa de custo mensal (R$/mês)</li>
+                <li>Integração com ao menos um serviço OCI</li>
+              </ul>
+            </div>
+
+            <div class="detail-block">
+              <h4>⚡ Exemplo de Requisição</h4>
+              <div class="code-block">
+                <pre><code>{
+  "consumo_kwh": 420,
+  "uso_horario_pico": true,
+  "quantidade_equipamentos": 10,
+  "tipo_imovel": "Casa",
+  "horas_alto_consumo": 8
+}</code></pre>
+              </div>
+            </div>
+
+            <div class="detail-block">
+              <h4>✅ Exemplo de Resposta</h4>
+              <div class="code-block code-response">
+                <pre><code>{
+  "categoria": "Ineficiente",
+  "probabilidade": 0.81,
+  "custo_estimado_mensal": 315.00,
+  "recomendacoes": [
+    "Reduzir uso em horários
+    de pico",
+    "Avaliar aparelhos de
+    alto consumo"
+  ]
+}</code></pre>
+              </div>
+            </div>
+
+            <div class="detail-block">
+              <h4>🚀 Recursos Opcionais</h4>
+              <ul class="optional-list">
+                <li>Dashboard de acompanhamento</li>
+                <li>Histórico de análises</li>
+                <li>Comparação entre períodos</li>
+                <li>Simulação de cenários de economia</li>
+                <li>Ranking de eficiência energética</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-footer">
+          <div class="oci-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            OCI obrigatório: Object Storage · Compute · Functions
+          </div>
+          <a href="pdfs/projeto-3-energiai.pdf" download class="btn-download" id="btn-download-p3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Baixar Documentação PDF
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== TRILHAS ===== -->
+  <section class="tracks-section" id="trilhas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tecnologia</span>
+        <h2>Trilhas Técnicas</h2>
+        <p>Cada equipe é composta por alunos de diferentes trilhas, colaborando para entregar uma solução completa.</p>
+      </div>
+      <div class="tracks-grid">
+        <div class="track-card track-ds">
+          <div class="track-icon">🔬</div>
+          <h3>Ciência de Dados</h3>
+          <p>Exploração, limpeza e modelagem de dados com Python, Pandas e Scikit-Learn. Entrega de notebook com modelo treinado e serializado.</p>
+          <ul>
+            <li>EDA e pré-processamento</li>
+            <li>Engenharia de atributos</li>
+            <li>Treinamento e avaliação</li>
+            <li>Serialização do modelo</li>
+          </ul>
+        </div>
+        <div class="track-card track-be">
+          <div class="track-icon">⚙️</div>
+          <h3>Back-End</h3>
+          <p>Desenvolvimento de API REST com Java e Spring Boot, integrando o modelo de Data Science e expondo endpoints documentados.</p>
+          <ul>
+            <li>API REST com Spring Boot</li>
+            <li>Integração com modelo DS</li>
+            <li>Validação e tratamento de erros</li>
+            <li>Documentação dos endpoints</li>
+          </ul>
+        </div>
+        <div class="track-card track-oci">
+          <div class="track-icon">☁️</div>
+          <h3>Oracle Cloud (OCI)</h3>
+          <p>Integração obrigatória com ao menos um serviço OCI para armazenamento, hospedagem ou processamento da solução.</p>
+          <ul>
+            <li>Object Storage</li>
+            <li>OCI Compute</li>
+            <li>OCI Functions</li>
+            <li>Banco de dados (opcional)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PARCEIROS ===== -->
+  <section class="partners-section" id="parceiros">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Parceiros</span>
+        <h2>Quem Faz Acontecer</h2>
+      </div>
+      <div class="partners-grid">
+        <div class="partner-card" id="partner-alura">
+          <div class="partner-logo-area">
+            <img src="assets/alura-logo.png" alt="Alura" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="partner-logo-placeholder" style="display:none">
+              <span>Alura</span>
+            </div>
+          </div>
+          <h3>Alura</h3>
+          <p>Plataforma líder de educação em tecnologia no Brasil. Responsável pela formação dos alunos do programa ONE.</p>
+        </div>
+        <div class="partner-card" id="partner-oracle">
+          <div class="partner-logo-area">
+            <img src="assets/oracle-logo.png" alt="Oracle" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="partner-logo-placeholder" style="display:none">
+              <span>Oracle</span>
+            </div>
+          </div>
+          <h3>Oracle</h3>
+          <p>Empresa global de tecnologia, parceira estratégica do programa ONE. Fornece acesso à Oracle Cloud Infrastructure.</p>
+        </div>
+        <div class="partner-card" id="partner-one">
+          <div class="partner-logo-area">
+            <img src="assets/one-logo.png" alt="Programa ONE" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="partner-logo-placeholder" style="display:none">
+              <span>ONE</span>
+            </div>
+          </div>
+          <h3>Programa ONE</h3>
+          <p>Oracle Next Education — iniciativa social de educação em tecnologia que capacita pessoas de todo o Brasil.</p>
+        </div>
+        <div class="partner-card partner-card--nocountry" id="partner-nocountry">
+          <div class="partner-logo-area">
+            <img src="assets/nocountry-logo.png" alt="NoCountry" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="partner-logo-placeholder" style="display:none">
+              <span>NoCountry</span>
+            </div>
+          </div>
+          <h3>NoCountry</h3>
+          <p>Plataforma parceira responsável pela organização dos grupos e pela infraestrutura colaborativa do Hackathon.</p>
+          <a href="https://www.nocountry.tech" target="_blank" rel="noopener noreferrer" class="btn-nocountry btn-nocountry--card" id="btn-nocountry-card">
+            Visitar NoCountry
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-title">Hackathon ONE · G9</span>
+          <p>Uma iniciativa de inovação e aprendizado para os alunos do programa Oracle Next Education.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#trilhas">Trilhas</a>
+          <a href="#parceiros">Parceiros</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Hackathon ONE G9 · Alura + Oracle + NoCountry</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
